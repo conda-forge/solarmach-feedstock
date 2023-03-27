@@ -1,11 +1,11 @@
-About solarmach
-===============
+About solarmach-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/solarmach-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jgieseler/solarmach
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/solarmach-feedstock/blob/main/LICENSE.txt)
 
 Summary: Multi-spacecraft longitudinal configuration plotter
 
