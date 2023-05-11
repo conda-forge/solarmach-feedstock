@@ -22,13 +22,17 @@ requirements:
   run:
     - astropy
     - astroquery
+    - drms
     - jinja2
+    - lxml
     - matplotlib-base
     - numpy
     - pandas
+    - pfsspy
     - python >=3.6
     - scipy
     - sunpy
+    - zeep
 
 test:
   imports:
