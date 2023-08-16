@@ -45,6 +45,12 @@ test:
     - solarmach
   requires:
     - pip
+    - flake8
+    - pytest
+    - pytest-doctestplus
+    - pytest-cov
+  commands:
+    - pytest solarmach
 
 about:
   home: https://github.com/jgieseler/solarmach
