@@ -50,7 +50,7 @@ test:
     - pytest-doctestplus
     - pytest-cov
   commands:
-    - pytest solarmach
+    - pytest --pyargs solarmach.tests.test
 
 about:
   home: https://github.com/jgieseler/solarmach
