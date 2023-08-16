@@ -1,5 +1,5 @@
 {% set name = "solarmach" %}
-{% set version = "0.1.7" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solarmach-{{ version }}.tar.gz
-  sha256: 5f29ba02e09c730a21425ddef8829426c14d41d4eca3dd427f3b6448ac0d8c51
+  sha256: 10fd5cf94a3c0cfe15f687b4d1ffe60d982925a540d0aa8f687b17dc06d83610
 
 build:
   noarch: python
@@ -16,19 +16,29 @@ build:
 
 requirements:
   host:
-    - pip
-    - python >=3.6
+    - python >=3.7
+    - setuptools
     - setuptools-scm
+    - wheel
+    - pip
   run:
+    - python >=3.7
     - astropy
     - astroquery
+    - cmasher
+    - drms
+    - imageio
     - jinja2
-    - matplotlib-base
+    - lxml
+    - matplotlib-base ==3.5.3
     - numpy
     - pandas
-    - python >=3.6
+    - pfsspy
+    - plotly
+    - python-dateutil
     - scipy
     - sunpy
+    - zeep
 
 test:
   imports:
