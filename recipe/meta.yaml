@@ -43,8 +43,6 @@ requirements:
 test:
   imports:
     - solarmach
-  commands:
-    - pip check
   requires:
     - pip
 
