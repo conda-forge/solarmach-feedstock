@@ -16,18 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - setuptools
     - setuptools-scm
     - wheel
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - astropy
     - astroquery
     - cmasher
     - drms
-    - imageio
+    - imageio >=2.31.6
     - jinja2
     - lxml
     - matplotlib-base ==3.5.3
@@ -37,6 +37,7 @@ requirements:
     - plotly
     - python-dateutil
     - scipy
+    - speasy >=1.2.0
     - sunpy
     - zeep
 
