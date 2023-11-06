@@ -27,7 +27,7 @@ requirements:
     - astroquery
     - cmasher
     - drms
-    - imageio >=2.31.6
+    - imageio >=2.31.5
     - jinja2
     - lxml
     - matplotlib-base ==3.5.3
@@ -37,7 +37,6 @@ requirements:
     - plotly
     - python-dateutil
     - scipy
-    - speasy >=1.2.0
     - sunpy
     - zeep
 
