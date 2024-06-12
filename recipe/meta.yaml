@@ -1,5 +1,5 @@
 {% set name = "solarmach" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solarmach-{{ version }}.tar.gz
-  sha256: 64dd9e9618ff67431b956cee21cbf0175be884ee9da6e3d6b466890288814e44
+  sha256: 8dbeb5620a4f96a69e703516d8d1af86668c1ac38c64d9cd7650b45c98ddfd5a
 
 build:
   noarch: python
