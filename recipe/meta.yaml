@@ -1,13 +1,14 @@
 {% set name = "solarmach" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solarmach-{{ version }}.tar.gz
-  sha256: 62d236a14215f9eaa9eb9dddccb94ce39a18edb7d6d7e41a1f89923f7b570547
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/solarmach-{{ version }}.tar.gz
+  sha256: d2639cf00928ca138441c8994c39fdd1e77943e3ac6d0fdd9840541134878253
 
 build:
   noarch: python
@@ -16,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python >={{ python_min }}
     - setuptools
     - setuptools-scm
     - wheel
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - astropy
     - astroquery
     - cmasher
@@ -45,6 +46,7 @@ test:
   imports:
     - solarmach
   requires:
+    - python >={{ python_min }}
     - pip
     - flake8
     - pytest
