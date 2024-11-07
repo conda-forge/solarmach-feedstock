@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solarmach-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/solarmach-{{ version }}.tar.gz
   sha256: d2639cf00928ca138441c8994c39fdd1e77943e3ac6d0fdd9840541134878253
 
 build:
