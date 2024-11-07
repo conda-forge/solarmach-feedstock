@@ -1,5 +1,6 @@
 {% set name = "solarmach" %}
 {% set version = "0.4.3" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -16,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python >={{ python_min }}
     - setuptools
     - setuptools-scm
     - wheel
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - astropy
     - astroquery
     - cmasher
@@ -45,6 +46,7 @@ test:
   imports:
     - solarmach
   requires:
+    - python >={{ python_min }}
     - pip
     - flake8
     - pytest
