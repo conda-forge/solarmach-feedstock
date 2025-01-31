@@ -1,5 +1,5 @@
 {% set name = "solarmach" %}
-{% set version = "0.4.3" %}
+{% set version = "0.5.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/solarmach-{{ version }}.tar.gz
-  sha256: d2639cf00928ca138441c8994c39fdd1e77943e3ac6d0fdd9840541134878253
+  sha256: 53606ec84caabcedadc60dcac002609223a90e8916ffeb553c9c5b4f91b3df00
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -40,6 +40,7 @@ requirements:
     - setuptools
     - sunkit-magex
     - sunpy
+    - threadpoolctl
     - zeep
 
 test:
