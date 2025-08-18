@@ -37,7 +37,6 @@ requirements:
     - plotly
     - python-dateutil
     - scipy
-    - setuptools
     - sunkit-magex
     - sunpy
     - threadpoolctl
