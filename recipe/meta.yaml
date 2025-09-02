@@ -25,6 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - astropy-base
+    - astroquery
     - cmasher
     - drms
     - imageio >=2.31.5
