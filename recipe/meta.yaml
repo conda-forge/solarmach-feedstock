@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,7 +25,6 @@ requirements:
   run:
     - python >={{ python_min }}
     - astropy-base
-    - astroquery
     - cmasher
     - drms
     - imageio >=2.31.5
