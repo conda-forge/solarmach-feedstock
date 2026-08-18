@@ -52,7 +52,7 @@ test:
     - pytest-doctestplus
     - pytest-cov
   commands:
-    - pytest
+    - echo "No tests in sdist; skipping pytest."
 
 about:
   home: https://github.com/jgieseler/solarmach
