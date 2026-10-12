@@ -33,6 +33,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
+    - parfive >=2.3.1
     - plotly
     - python-dateutil
     - scipy
