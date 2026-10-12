@@ -1,6 +1,6 @@
 {% set name = "solarmach" %}
 {% set version = "0.5.4" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -27,18 +27,20 @@ requirements:
     - astropy-base
     - cmasher
     - drms
-    - imageio >=2.31.5
+    - imageio >=2.31.6
     - jinja2
     - lxml
     - matplotlib-base
     - numpy
     - pandas
+    - parfive >=2.3.1
     - plotly
     - python-dateutil
     - scipy
     - sunkit-magex
     - sunpy
     - threadpoolctl
+    - tqdm
     - zeep
 
 test:
